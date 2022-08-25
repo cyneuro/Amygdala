@@ -1,3 +1,7 @@
+# Amygdala Repository 
+
+Maintained by [Tyler Banks](https://github.com/tjbanks) and [Greg Glickert](https://github.com/GregGlickert)
+
 # Amygdala Theta
 #### Code by Tyler Banks and Matthew Stroud. In partnership with Unal Lab (Tuna and Unal)
 Modeling Basal Forebrain GABAergic Neuromodulation of the Amygdala Theta Rhythm
