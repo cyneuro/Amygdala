@@ -1,5 +1,5 @@
 begintemplate SOM_Cell
-	public NumSoma,NumDend,insert_mechs
+	public NumSoma,NumDend,insert_mechs, insert_mechs_base
 	NumSoma = 1
 	NumDend = 2
 	
@@ -224,6 +224,12 @@ begintemplate SOM_Cell
  }   
 
 proc insert_mechs(){
+                r = $1
+                soma[0]{
+				}
+}
+
+proc insert_mechs_base(){
                 r = $1
                 soma[0]{
                         noiseRandObj_exc=new Random()
