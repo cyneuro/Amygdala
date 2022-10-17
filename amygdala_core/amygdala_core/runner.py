@@ -1,7 +1,7 @@
 import os, sys
 from bmtk.simulator import bionet
 import numpy as np
-import synapses
+from . import synapses
 import warnings
 
 def run(config_file):
