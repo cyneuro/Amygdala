@@ -1,12 +1,12 @@
 from bmtk.builder import NetworkBuilder
 from bmtk.builder.auxi.node_params import positions_list, xiter_random
 from bmtk.utils.sim_setup import build_env_bionet
-import amygdala.synapses as synapses
+from amygdala_core import synapses
 import os, sys
 import warnings
 
-from amygdala.builder import build_networks, build_edges, save_networks
-from amygdala.connectors import *
+from amygdala_core.builder import build_networks, build_edges, save_networks
+from amygdala_core.connectors import *
 
 np.random.seed(123412)
 warnings.simplefilter(action='ignore', category=FutureWarning)

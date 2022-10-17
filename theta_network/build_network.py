@@ -1,12 +1,13 @@
 import numpy as np
 from bmtk.builder.auxi.node_params import positions_cuboid, positions_list, xiter_random
 from bmtk.utils.sim_setup import build_env_bionet
-import amygdala import synapses
+from amygdala_core import synapses
 import math
 import random
 import os, sys
 
-from amygdala.connectors import *
+from amygdala_core.builder import build_networks, build_edges, save_networks
+from amygdala_core.connectors import *
 
 np.random.seed(123412)
 
@@ -14,7 +15,7 @@ network_dir = 'network'
 components_dir = '../components'
 t_sim = 15000.0
 dt = 0.05
-scale = 27
+scale = 1
 
 min_conn_dist = 0.0
 max_conn_dist = 300.0 #300.0 #9999.9# Distance constraint for all cells

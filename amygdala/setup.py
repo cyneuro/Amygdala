@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="amygdala",
+    name="amygdala_core",
     version="0.1.0",
     author="Tyler Banks",
     author_email="tbanks@mail.missouri.edu",
