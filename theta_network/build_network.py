@@ -99,7 +99,7 @@ network_definitions = [
                 'rotation_angle_zaxis': xiter_random(N=numPN_A, min_x=0.0, max_x=2*np.pi),
                 'rotation_angle_yaxis': xiter_random(N=numPN_A, min_x=0.0, max_x=2*np.pi),
                 'model_type': 'biophysical',
-                'model_template': 'hoc: Cell_Af'
+                'model_template': 'hoc:Cell_Af'
             },
             {   # Pyramidal Cells - Type C
                 'N': numPN_C,
@@ -108,7 +108,7 @@ network_definitions = [
                 'rotation_angle_zaxis': xiter_random(N=numPN_C, min_x=0.0, max_x=2*np.pi),
                 'rotation_angle_yaxis': xiter_random(N=numPN_C, min_x=0.0, max_x=2*np.pi),
                 'model_type': 'biophysical',
-                'model_template': 'hoc: Cell_Cf'
+                'model_template': 'hoc:Cell_Cf'
             },
             {   # Interneuron - fast spiking PV
                 'N': numPV,
@@ -117,7 +117,7 @@ network_definitions = [
                 'rotation_angle_zaxis': xiter_random(N=numPV, min_x=0.0, max_x=2*np.pi),
                 'rotation_angle_yaxis': xiter_random(N=numPV, min_x=0.0, max_x=2*np.pi),
                 'model_type': 'biophysical',
-                'model_template': 'hoc: InterneuronCellf'
+                'model_template': 'hoc:InterneuronCellf'
             },
             {   # Interneuron - SOM Cell
                 'N': numSOM,
@@ -126,7 +126,7 @@ network_definitions = [
                 'rotation_angle_zaxis': xiter_random(N=numSOM, min_x=0.0, max_x=2*np.pi),
                 'rotation_angle_yaxis': xiter_random(N=numSOM, min_x=0.0, max_x=2*np.pi),
                 'model_type': 'biophysical',
-                'model_template': 'hoc: SOM_Cell'
+                'model_template': 'hoc:SOM_Cell'
             },
             {   # Interneuron - CR Cell
                 'N': numCR,
@@ -135,7 +135,7 @@ network_definitions = [
                 'rotation_angle_zaxis': xiter_random(N=numCR, min_x=0.0, max_x=2*np.pi),
                 'rotation_angle_yaxis': xiter_random(N=numCR, min_x=0.0, max_x=2*np.pi),
                 'model_type': 'biophysical',
-                'model_template': 'hoc: CR_Cell'
+                'model_template': 'hoc:CR_Cell'
             }
         ] # End cells
     }, # End BLA
