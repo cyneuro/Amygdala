@@ -5,7 +5,7 @@ Maintained by [Tyler Banks](https://github.com/tjbanks) and [Greg Glickert](http
 
 Before running in a network folder, install the core code.
 ```
-cd amygdala
+cd amygdala_core
 python setup.py develop
 ```
 

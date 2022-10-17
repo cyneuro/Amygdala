@@ -1,5 +1,6 @@
 import numpy as np
 from bmtk.builder.auxi.node_params import xiter_random
+from bmtk.utils.sim_setup import build_env_bionet
 from amygdala_core import synapses
 import math
 import random
