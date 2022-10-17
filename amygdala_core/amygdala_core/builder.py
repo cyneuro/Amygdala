@@ -1,4 +1,7 @@
+import numpy as np
 from bmtk.builder import NetworkBuilder
+from bmtk.builder.auxi.node_params import positions_cuboid, positions_list, xiter_random
+import os
 
 def build_networks(network_definitions: list) -> dict: 
     # network_definitions should be a list of dictionaries eg:[{}]

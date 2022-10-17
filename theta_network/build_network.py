@@ -1,6 +1,5 @@
 import numpy as np
-from bmtk.builder.auxi.node_params import positions_cuboid, positions_list, xiter_random
-from bmtk.utils.sim_setup import build_env_bionet
+from bmtk.builder.auxi.node_params import xiter_random
 from amygdala_core import synapses
 import math
 import random
@@ -862,7 +861,7 @@ if edge_effects:
 # see synapses.py - loads each json's in components/synaptic_models into a 
 # dictionary so the properties can be referenced in the files eg: syn['file.json'].get('property')
 synapses.load()
-syn = synapses.syn_params_dicts()
+syn = synapses.syn_params_dicts(syn_dir='../components/synaptic_models')
 
 # Build your edges into the networks
 build_edges(networks, edge_definitions, edge_params, edge_add_properties, syn)
