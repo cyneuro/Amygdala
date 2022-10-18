@@ -86,7 +86,7 @@ def spike_frequency_histogram(spikes_df,node_set,ms,skip_ms=0,ax=None,n_bins=10)
         
         
 
-def run(show_plots=False,save_plots=False):
+def run(show_plots=True,save_plots=False):
     
 
     dt = 0.05
@@ -140,7 +140,7 @@ def run(show_plots=False,save_plots=False):
 
 
 if __name__ == '__main__':
-    show_plots = False
+    show_plots = True
     save_plots = False
     if '--show-plots' in sys.argv:
         show_plots = True

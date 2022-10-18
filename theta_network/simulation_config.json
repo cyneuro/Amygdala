@@ -20,7 +20,7 @@
     "vpsi_inh_spikes": {
       "input_type": "spikes",
       "module": "sonata",
-      "input_file": "$BASE_DIR/vpsi_inh_spikes.h5",
+      "input_file": "$BASE_DIR/vpsi_inh_spikes_nonrhythmic.h5",
       "node_set": "vpsi_inh"
     },
     "thalamus_pyr_spikes": {

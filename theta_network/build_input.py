@@ -63,4 +63,4 @@ if __name__ == '__main__':
     if 'homogenous' in sys.argv:
         build_input(15000, scale=1)
     else:
-        build_input(15000, scale=27)
+        build_input(15000, scale=scale)

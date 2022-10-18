@@ -60,7 +60,7 @@ if __name__ == '__main__':
         print('Building homogenous network')
 
     else: 
-        print('Building full network')
+        print(f'Building full network (scale: {scale})')
 
 #Scale the number of cells in each population
 numPN_A = numPN_A * scale #640 * scale #4114#15930
