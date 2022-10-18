@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import sys
 
-scale = 5
+scale = 1
 
 def raster(spikes_df,node_set,skip_ms=0,ax=None):
     spikes_df = spikes_df[spikes_df['timestamps']>skip_ms] 
@@ -140,7 +140,7 @@ def run(show_plots=True,save_plots=False):
 
 
 if __name__ == '__main__':
-    show_plots = True
+    show_plots = False
     save_plots = False
     if '--show-plots' in sys.argv:
         show_plots = True
