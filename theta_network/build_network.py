@@ -50,7 +50,7 @@ if __name__ == '__main__':
         print("Ommiting SOM and CR cells")
 
     elif 'homogenous' in sys.argv: 
-        network_dir = 'components_homogenous'
+        network_dir = 'network_homogenous'
         components_dir = 'components_homogenous'
         scale = 1
         max_conn_dist = 9999.9
