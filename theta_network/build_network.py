@@ -13,6 +13,7 @@ np.random.seed(123412)
 
 network_dir = 'network'
 components_dir = '../components'
+syn_dir='../components/synaptic_models'
 t_sim = 15000.0
 dt = 0.05
 scale = 1
@@ -41,6 +42,7 @@ if __name__ == '__main__':
 
         network_dir = network_dir + '_feng_homogenous'
         components_dir = components_dir + '_feng_homogenous'
+        syn_dir='components_feng_homogenous/synaptic_models'
         scale = 1
         max_conn_dist = 9999.9
         edge_effects = False
@@ -52,6 +54,7 @@ if __name__ == '__main__':
     elif 'homogenous' in sys.argv: 
         network_dir = 'network_homogenous'
         components_dir = 'components_homogenous'
+        syn_dir='components_homogenous/synaptic_models'
         scale = 1
         max_conn_dist = 9999.9
         edge_effects = False
@@ -862,7 +865,7 @@ if edge_effects:
 # see synapses.py - loads each json's in components/synaptic_models into a 
 # dictionary so the properties can be referenced in the files eg: syn['file.json'].get('property')
 synapses.load()
-syn = synapses.syn_params_dicts(syn_dir='../components/synaptic_models')
+syn = synapses.syn_params_dicts(syn_dir=syn_dir)
 
 # Build your edges into the networks
 build_edges(networks, edge_definitions, edge_params, edge_add_properties, syn)
