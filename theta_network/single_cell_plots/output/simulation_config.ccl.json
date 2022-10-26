@@ -1,0 +1,76 @@
+{
+  "target_simulator": "NEURON",
+  "run": {
+    "tstart": 0.0,
+    "tstop": 500.0,
+    "dt": 0.05,
+    "dL": 200000.0,
+    "spike_threshold": -15.0,
+    "nsteps_block": 5000
+  },
+  "conditions": {
+    "celsius": 31.0,
+    "v_init": -70.0
+  },
+  "inputs": {
+    "cclamp": {
+      "input_type": "current_clamp",
+      "module": "IClamp",
+      "node_set": "clamp_cells",
+      "amp": 0.2,
+      "delay": 200.0,
+      "duration": 1000.0
+    }
+  },
+  "output": {
+    "log_file": "/home/tbg28/git_stage/Amygdala/theta_network/single_cell_plots/output/log.txt",
+    "output_dir": "/home/tbg28/git_stage/Amygdala/theta_network/single_cell_plots/output",
+    "spikes_file": "/home/tbg28/git_stage/Amygdala/theta_network/single_cell_plots/output/spikes.h5"
+  },
+  "reports": {
+    "v_report": {
+      "variable_name": "v",
+      "cells": "all",
+      "module": "membrane_report",
+      "sections": "soma"
+    }
+  },
+  "node_sets_file": "/home/tbg28/git_stage/Amygdala/theta_network/single_cell_plots/node_sets.json",
+  "network": "/home/tbg28/git_stage/Amygdala/theta_network/single_cell_plots/circuit_config.json",
+  "config_path": "/home/tbg28/git_stage/Amygdala/theta_network/single_cell_plots/simulation_config.ccl.json",
+  "config_dir": "/home/tbg28/git_stage/Amygdala/theta_network/single_cell_plots",
+  "components": {
+    "__pycache___dir": "/home/tbg28/git_stage/Amygdala/theta_network/single_cell_plots/components/__pycache__",
+    "biophysical_neuron_models_dir": "/home/tbg28/git_stage/Amygdala/theta_network/single_cell_plots/components/biophysical_neuron_models",
+    "mechanisms_dir": "/home/tbg28/git_stage/Amygdala/theta_network/single_cell_plots/components/mechanisms",
+    "morphologies_dir": "/home/tbg28/git_stage/Amygdala/theta_network/single_cell_plots/components/morphologies",
+    "point_neuron_models_dir": "/home/tbg28/git_stage/Amygdala/theta_network/single_cell_plots/components/point_neuron_models",
+    "synaptic_models_dir": "/home/tbg28/git_stage/Amygdala/theta_network/single_cell_plots/components/synaptic_models",
+    "templates_dir": "/home/tbg28/git_stage/Amygdala/theta_network/single_cell_plots/components/templates"
+  },
+  "networks": {
+    "nodes": [
+      {
+        "nodes_file": "/home/tbg28/git_stage/Amygdala/theta_network/single_cell_plots/network/BLA_nodes.h5",
+        "node_types_file": "/home/tbg28/git_stage/Amygdala/theta_network/single_cell_plots/network/BLA_node_types.csv"
+      }
+    ],
+    "edges": [],
+    "gap_juncs": []
+  },
+  "node_sets": {
+    "biophysical_nodes": {
+      "model_type": "biophysical"
+    },
+    "point_nodes": {
+      "model_type": "point_process"
+    },
+    "clamp_cells": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  }
+}
