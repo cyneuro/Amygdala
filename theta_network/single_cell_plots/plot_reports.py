@@ -39,6 +39,9 @@ inj_range = np.array([i for i in range(int(i_inj_start/dt),int(i_inj_dur/dt))])
 inj_range = inj_range[(inj_range < len(ms))]
 inj[inj_range] = i_inj_nA * 1000
 
+output = {}
+output["time"] = list(ms)
+output["cclamp"] = list(inj)
 
 for cell in cells:
     cell_id = cell['id']
@@ -70,5 +73,12 @@ for cell in cells:
     print("saving " + f_name)
     plt.savefig(f_name, bbox_inches='tight')
     #plt.show()
+
+    output[cell["name"]] = list(trace)
+
+output_filename = "traces.json"
+
+with open(output_filename,"w") as f:
+    json.dump(output,f)
 
 #trace_df = pd.DataFrame({'node_ids':f['spikes']['BLA']['node_ids'],'timestamps':f['spikes']['BLA']['timestamps']})
