@@ -1,5 +1,11 @@
 # Amygdala Repository 
 
+## See original repositories for updates. This project has been deprecated.
+
+* https://github.com/tjbanks/amygdalatheta
+* https://github.com/GregGlickert/LargeScaleBLA
+
+
 Maintained by [Tyler Banks](https://github.com/tjbanks) and [Greg Glickert](https://github.com/GregGlickert)
 
 
